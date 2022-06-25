@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movies</title>
+</head>
+<body>
+    <!--Start Header Section-->
+    <header>
+        <nav class="navBar">
+            <ul class="navLinks">
+                <li><a href="" class="link" id="now-playing">Now Playing</a></li>
+                <li><a href="" class="link" id="popular">Popular</a></li>
+                <li><a href="" class="link" id="top-rate">Top Rated</a></li>
+                <li><a href="" class="link" id="trending">Trending</a></li>
+                <li><a href="" class="link" id="up-coming">Upcoming</a></li>
+                <li><a href="#contact" class="link">Contact Us</a></li>
+            </ul>
+            <div class="info text-white">
+                <div class="social">
+                    <span class="facebook"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="global"><i class="fa-solid fa-globe"></i></span>
+                    <span class="share"><i class="fa-solid fa-share-nodes"></i></span>
+                </div>
+                <p>
+                    Copyright Â© 2019 All Rights <br> Reserved.
+                </p>
+            </div>
+        </nav>
+        <div class="toggle text-center pt-1">
+            <div class="logo"><img src="images/logo.png" alt="logo-pic" class="w-50"></div>
+            <span id="open" class="toggle-icon d-block"><i class="fa-solid fa-bars"></i></span>
+            <span id="close" class="close-icon d-none"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+    </header>
+    <!--End Header Section-->
+    <!--Start Search Section-->
+    <section class="form pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="getMovies" id="getMovies" placeholder="Get Movies By Word" class="w-100 p-2">
+                </div>
+                <div class="col-md-6 mb-2">
+                    <input type="text" name="search" id="search" placeholder="Search" class="w-100 p-2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Search Section-->
+    <!--Start Movies Section-->
+    <section id="movies" class="pt-5 pb-5">
+        <div class="container">
+            <div id="movieList" class="row">
+               
+            </div>
+        </div>
+    </section>
+    <!--End Movies Section-->
+    <!--Start Contact Section-->
+    <section id="contact" class="pt-5 pb-5">
+        <div class="container">
+            <div class="heading text-center text-white py-3">
+                <h2>Contact</h2>
+            </div>
+            <div class="form">
+                <div class="row">
+                    <div class="col-md-6 py-2 mb-2">
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" class="w-100 p-2">
+                        <p id="name-warring" class="red d-none">* Please Enter Name</p>
+                    </div>
+                    <div class="col-md-6 py-2 mb-2">
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" class="w-100 p-2">
+                        <p id="email-warring" class="red d-none">* Please Enter Email</p>
+                    </div>
+                    <div class="col-md-6 py-2 mb-2">
+                        <input type="tel" name="phone" id="tel" placeholder="Enter Your Phone" class="w-100 p-2">
+                        <p id="tel-warring" class="red d-none">* Please Enter Phone Number</p>
+                    </div>
+                    <div class="col-md-6 py-2 mb-2">
+                        <input type="number" name="age" id="age" placeholder="Enter Your Age" class="w-100 p-2">
+                        <p id="age-warring" class="red d-none">* Please Enter Your Age</p>
+                    </div>
+                    <div class="col-md-6 py-2 mb-2">
+                        <input type="password" name="password" id="password" placeholder="Enter Your Password" class="w-100 p-2">
+                        <p id="pass-warring" class="red d-none">* Please Enter A Correct Password at least 8 characters and contain one number and one letter</p>
+                    </div>
+                    <div class="col-md-6 py-2 mb-2">
+                        <input type="password" name="repassword" id="rePassword" placeholder="Please Re Password" class="w-100 p-2">
+                        <p id="repass-warring" class="red d-none">* Please Enter A Correct Password at least 8 characters and contain one number and one letter</p>
+                    </div>
+                </div>
+                <button id="submitBtn" class="btn btn-submit p-3 rounded-pill">Submit</button>
+            </div>
+        </div>
+    </section>
+    <!--End Contact Section-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

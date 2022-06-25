@@ -1,0 +1,147 @@
+/*Global Rules*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/*Components*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+    transition: all 1s;
+}
+input:focus{
+    border-bottom-color: #C6C6C6;
+}
+input::placeholder{
+    text-align: center;
+    color: #fff;
+}
+body{
+    background-color: #303030;
+}
+.red{
+    color: #D62E33;
+    font-size: 20px;
+}
+/*End Of Global Rules*/
+/*Start Header*/
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: fit-content;
+    z-index: 1000;
+    left: -213.562px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+    padding-right: 5px;
+    padding-top: 10px;
+    background-color: #000000;
+}
+header nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: all 1s;
+}
+header nav ul li a:hover{
+    color: #D62E33;
+}
+header nav .social span{
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+header nav .social .facebook:hover{
+    color: #1877f2 !important;
+}
+header nav .social .twitter:hover{
+    color: #1da1f2 !important;
+}
+header nav .social .global:hover{
+    color: #dd4b39 !important;
+}
+header nav .social .share:hover{
+    color: #303030 !important;
+}
+.toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    width: fit-content;
+}
+.toggle img{
+    cursor: pointer;
+}
+.toggle .toggle-icon,
+.toggle .close-icon{
+    cursor: pointer;
+    font-size: 20px;
+}
+/*End Header*/
+/*Start Movies Section*/
+#movies {
+ background-color: transparent;
+}
+#movies .movie-card{
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+#movies .movie-card .overlay{
+    flex-direction: column;
+    position: absolute;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    left: 0;
+    top: 150%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.4);
+    transition: all 1s;
+}
+#movies .movie-card:hover .overlay{
+    top: 0;
+}
+/*End Movies Section*/
+/*Start Contact Section*/
+.btn-submit{
+    color: #fff;
+    border: 1px solid #000000;
+    background-color: transparent;
+    font-size: 20px;
+    outline: none;
+    transition: all 1s;
+}
+.btn-submit:hover{
+    color: #fff;
+    background-color: #000000;
+}
+/*End Contact Section*/
